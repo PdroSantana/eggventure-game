@@ -175,6 +175,7 @@ public class EggControl : MonoBehaviour
         if(other.tag == "End")
 		{
             inTheEnd = true;
+            other.GetComponent<EndOfLevel_LoadNextScene>().LoadNext(SceneManager.GetActiveScene().buildIndex+1);
         }
         if(other.tag == "Opener")
         {

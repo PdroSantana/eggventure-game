@@ -273,7 +273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8aad9128805500348a9c9b2dadebe1f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8aad9128805500348a9c9b2dadebe1f4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -312,6 +312,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 8aad9128805500348a9c9b2dadebe1f4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8aad9128805500348a9c9b2dadebe1f4, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8aad9128805500348a9c9b2dadebe1f4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3cd6ce60d16c0be4889f1b51e08ad121, type: 2}
@@ -347,9 +355,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6537368497025282453}
   serializedVersion: 2
-  m_Mass: 1.7
+  m_Mass: 2.5
   m_Drag: 0.4
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.07
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -369,6 +377,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4711208715938537054, guid: 8aad9128805500348a9c9b2dadebe1f4, type: 3}
+--- !u!136 &8409467475259658592
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6537368497025282453}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 1
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!96 &7712751072062222890
 TrailRenderer:
   serializedVersion: 2
@@ -390,7 +412,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 29966c3c0907b49b58c4e59342d020cf, type: 2}
+  - {fileID: 2100000, guid: 3cd6ce60d16c0be4889f1b51e08ad121, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -489,19 +511,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62c260661f7cfd49a6cb1347e5cd9c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameCam: {fileID: 0}
   playerRB: {fileID: 7712751070779748670}
   pushForce: 12
-  jumpForce: 25
-  eggUI_Icon: {fileID: 0}
-  eggUI_Animator: {fileID: 0}
-  maxHealth: 3
-  wasGounded: 0
-  wasFalling: 0
-  startFall: 0
-  damageFallDistance: 0
+  jumpForce: 27
+  joystick: {fileID: 0}
+  transitionImage: {fileID: 0}
   damageIndicator: {fileID: 0}
   hitGroundSFX: {fileID: 0}
   jumpSFX: {fileID: 0}
   damageSFX: {fileID: 0}
+  pauseMenu: {fileID: 0}
   textCoinCount: {fileID: 0}
+  spawn: {fileID: 0}
